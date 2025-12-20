@@ -383,7 +383,7 @@ def transform_to_dataframe(pipeline, df, target, numeric_cols, categorical_cols)
 # 5. Example Usage
 # -------------------------------------------------------------
 if __name__ == "__main__":
-    df = pd.read_csv("data/raw/data.csv")
+    df = pd.read_csv("data/processed/augmented_raw_data_for_task3.csv")
     target = "FraudResult"
 
     customer_col = "CustomerId"
@@ -448,7 +448,7 @@ if target in numeric_cols:
     # -------------------------------
     # 4. Save clean dataset to processed folder
     # -------------------------------
-    output_path = r"C:\Users\hp\Desktop\AI projects\bati-bank-credit-scoring\data\processed\task3_final_dataset.csv"
+    output_path = r"C:\Users\hp\Desktop\AI projects\bati-bank-credit-scoring\data\processed\clean_data.csv"
     df_final_task3.to_csv(output_path, index=False)
     print(
         f"Task 3 final clean dataset with WoE-IV features saved at: {output_path}")
