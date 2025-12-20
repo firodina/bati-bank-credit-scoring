@@ -10,6 +10,8 @@ models/
 *.joblib
 logs/
 *.log
+mlruns/
+mlflow.db
 
 data/raw/
 data/processed/
